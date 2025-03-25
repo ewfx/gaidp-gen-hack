@@ -1,60 +1,47 @@
-# 🚀 Project Name
+# Backend
 
-## 📌 Table of Contents
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Inspiration](#inspiration)
-- [What It Does](#what-it-does)
-- [How We Built It](#how-we-built-it)
-- [Challenges We Faced](#challenges-we-faced)
-- [How to Run](#how-to-run)
-- [Tech Stack](#tech-stack)
-- [Team](#team)
+# Regulatory Rule Extraction Service
+
+This project provides a FastAPI-based backend service for extracting and refining regulatory rules from datasets and PDF documents.
+
+## Features
+
+- Extract rules from a dataset and a PDF document.
+- Refine extracted rules for specific columns.
+- Export refined rules in JSON or Markdown format.
 
 ---
 
-## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+## Prerequisites
 
-## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
+Before running the project, ensure you have the following installed:
 
-![Screenshot 1](link-to-image)
+- Python 3.8 or higher
+- `pip` (Python package manager)
 
-## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+---
 
-## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+## Installation
 
-## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+1. **Clone the Repository**
+   pip install -r requirements.txt
+   python -m spacy download en_core_web_sm
 
-## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+Running the Application
+Start the FastAPI Server
+python main.py
 
-## 🏃 How to Run
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
-   ```
+Run the following command to start the server:
+http://127.0.0.1:8005
 
-## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+Access the API Open your browser and navigate to:
+API Documentation FastAPI provides interactive API documentation:
 
-## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+Swagger UI: http://127.0.0.1:8005/docs
+ReDoc: http://127.0.0.1:8005/redoc
+
+### UI
+
+cd dpdashboard
+npm i
+npm run dev
