@@ -45,3 +45,6 @@ ReDoc: http://127.0.0.1:8005/redoc
 cd dpdashboard
 npm i
 npm run dev
+
+
+## ppt available in artifacts folder
