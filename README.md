@@ -34,6 +34,43 @@ python main.py
 Run the following command to start the server:
 http://127.0.0.1:8005
 
+API Endpoints
+1. Extract Rules
+
+Endpoint: /extract-rules
+Method: POST
+Description: Upload PDF and Excel files to extract regulatory rules
+
+2. Refine Rules
+
+Endpoint: /refine-rules
+Method: POST
+Description: Modify existing rules interactively
+
+3. Get Rules
+
+Endpoint: /get-rules
+Method: GET
+Description: Retrieve current regulatory rules
+
+4. Export Rules
+
+Endpoint: /export-rules
+Method: POST
+Description: Export rules in JSON or CSV format
+
+Swagger Documentation
+Access API documentation at: http://localhost:8000/docs
+Logging
+Logs are stored in rules/regulatory_rule_extractor.log
+Security Considerations
+
+Replace default API key with your Mistral AI key
+Implement proper authentication in production
+Use HTTPS
+Validate and sanitize file uploads
+
+
 Access the API Open your browser and navigate to:
 API Documentation FastAPI provides interactive API documentation:
 
